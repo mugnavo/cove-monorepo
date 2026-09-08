@@ -28,11 +28,11 @@ catalog:
   "@tanstack/react-form": 1.33.5
   "@tanstack/react-query": 5.102.8
   "@tanstack/react-query-devtools": 5.102.8
-  "@tanstack/react-router": 1.170.32
+  "@tanstack/react-router": 1.170.33
   "@tanstack/react-router-devtools": 1.167.1
   "@tanstack/react-router-ssr-query": 1.167.2
-  "@tanstack/react-start": 1.168.49
-  "@types/node": 26.4.1
+  "@tanstack/react-start": 1.168.50
+  "@types/node": 26.5.0
   "@types/react": 19.2.18
   "@types/react-dom": 19.2.7
   "@varlock/vite-integration": 1.5.1
@@ -44,7 +44,7 @@ catalog:
   date-fns: 4.4.0
   drizzle-kit: 1.0.0-rc.4
   drizzle-orm: 1.0.0-rc.4
-  lucide-react: 1.41.0
+  lucide-react: 1.42.0
   motion: 13.2.0
   nanoid: 6.0.1
   nitro: 3.0.260903-beta
@@ -59,7 +59,7 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@0.3.0
   vite-plus: 0.3.0
   zod: 4.5.4
-  oxc-transform-react: 0.148.0
+  oxc-transform-react: 0.149.0
 
 catalogMode: prefer
 
