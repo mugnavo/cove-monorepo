@@ -30,24 +30,15 @@ export const auth = betterAuth({
 
   // https://better-auth.com/docs/concepts/oauth
   socialProviders: {
-    ...(ENV.GITHUB_CLIENT_ID && ENV.GITHUB_CLIENT_SECRET
-      ? {
-          github: {
-            clientId: ENV.GITHUB_CLIENT_ID,
-            clientSecret: ENV.GITHUB_CLIENT_SECRET,
-          },
-        }
-      : {}),
-    ...(ENV.GOOGLE_CLIENT_ID && ENV.GOOGLE_CLIENT_SECRET
-      ? {
-          google: {
-            clientId: ENV.GOOGLE_CLIENT_ID,
-            clientSecret: ENV.GOOGLE_CLIENT_SECRET,
-          },
-        }
-      : {}),
+    github: {
+      clientId: ENV.GITHUB_CLIENT_ID!,
+      clientSecret: ENV.GITHUB_CLIENT_SECRET,
+    },
+    google: {
+      clientId: ENV.GOOGLE_CLIENT_ID!,
+      clientSecret: ENV.GOOGLE_CLIENT_SECRET,
+    },
   },
-
   // https://better-auth.com/docs/authentication/email-password
   emailAndPassword: {
     enabled: true,
