@@ -24,8 +24,7 @@
     "lucide-react": "catalog:",
     "motion": "catalog:",
     "shadcn": "catalog:",
-    "tw-animate-css": "catalog:",
-    "zod": "catalog:"
+    "tw-animate-css": "catalog:"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
