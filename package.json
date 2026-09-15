@@ -39,7 +39,7 @@
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@12.4.1",
+  "packageManager": "pnpm@12.4.2",
   "generator": "create-mugnavo",
   "intent": {
     "skills": [
