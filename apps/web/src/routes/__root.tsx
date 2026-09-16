@@ -17,11 +17,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     // Start handles errors before Nitro, so evlog needs a route middleware too.
     middleware: [createMiddleware().server(evlogErrorHandler)],
   },
-  // Typically we don't need the user immediately in landing pages.
-  // For protected routes, see /_auth/route.tsx
-  // beforeLoad: ({ context }) => {
-  //   void context.queryClient.query(authQueryOptions()).catch(noop);
-  // },
   head: () => ({
     meta: [
       {
