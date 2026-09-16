@@ -44,6 +44,7 @@ catalog:
   date-fns: 4.4.0
   drizzle-kit: 1.0.0-rc.4
   drizzle-orm: 1.0.0-rc.4
+  evlog: 2.29.0
   lucide-react: 1.46.0
   motion: 13.3.0
   nanoid: 6.0.1

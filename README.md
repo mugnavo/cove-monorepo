@@ -13,6 +13,7 @@ pnpm create mugnavo -t monorepo
 - [Drizzle ORM](https://orm.drizzle.team/) + PostgreSQL
 - [Better Auth](https://better-auth.com/)
 - [Vite Plus](https://viteplus.dev/) + [Nitro](https://nitro.build/)
+- [evlog](https://www.evlog.dev/) structured logging and errors
 
 ```sh
 ├── apps
@@ -20,6 +21,7 @@ pnpm create mugnavo -t monorepo
 ├── packages
 │    ├── auth                   # Better Auth
 │    ├── db                     # Drizzle ORM + Drizzle Kit + PostgreSQL
+│    ├── logger                 # Shared logging, safe defaults, and structured errors
 │    └── ui                     # shadcn/ui primitives & utils
 ├── tools
 │    └── tsconfig               # Shared TypeScript configuration
@@ -83,6 +85,12 @@ pnpm create mugnavo -t monorepo
 In application code, `import { ENV } from "varlock/env"` instead of reading `process.env` directly.
 
 When adding another runnable app (e.g. a separate Hono server), provide it with its own schema and local env file. Keep environment ownership with the runnable app rather than its shared packages.
+
+## Logging
+
+[evlog](https://www.evlog.dev/) is wired into the web app through Nitro and emits one structured wide event per request. Use the server-only `useLogger()` adapter in `apps/web/src/lib/logger.server.ts` for request context, import `createError` or `parseError` from `@repo/logger`, and use `@repo/logger/server` for standalone jobs or lifecycle work.
+
+Framework wiring stays with each runnable app. When adding another app, add `evlog` directly, register its official framework integration with a distinct service name, apply the shared redaction defaults, and keep app-specific drains and environment variables there. Reuse `@repo/logger` only for framework-neutral APIs and types. See [the observability agent guide](./.agents/observability.md) for usage conventions.
 
 ## Deploying to production
 
