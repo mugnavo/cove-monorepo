@@ -7,15 +7,16 @@ import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
 import { createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import { createMiddleware } from "@tanstack/react-start";
+import { evlogErrorHandler } from "evlog/nitro/v3";
 
 import appCss from "#/styles.css?url";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  // Typically we don't need the user immediately in landing pages.
-  // For protected routes, see /_auth/route.tsx
-  // beforeLoad: ({ context }) => {
-  //   void context.queryClient.query(authQueryOptions()).catch(noop);
-  // },
+  server: {
+    // Start handles errors before Nitro, so evlog needs a route middleware too.
+    middleware: [createMiddleware().server(evlogErrorHandler)],
+  },
   head: () => ({
     meta: [
       {
