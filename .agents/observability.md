@@ -31,7 +31,7 @@ throw createError({
 });
 ```
 
-Framework wiring stays in `apps/web`: `nitro.config.ts` registers the Nitro v3 module and `src/routes/__root.tsx` installs Start's error middleware. Keep `experimental.asyncContext` enabled because the local `useLogger()` adapter depends on Nitro's request context.
+Framework wiring stays in `apps/web`: `nitro.config.ts` registers the Nitro v3 module and `src/routes/__root.tsx` installs Start's error middleware.
 
 ## Standalone server work
 
