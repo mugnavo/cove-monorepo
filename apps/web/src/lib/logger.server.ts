@@ -1,4 +1,3 @@
-import "@tanstack/react-start/server-only";
 import type { RequestLogger } from "@repo/logger";
 import { useRequest } from "nitro/context";
 
@@ -10,6 +9,5 @@ export function useLogger() {
     throw new Error("evlog is not initialized for the current request");
   }
 
-  // evlog adds this runtime field; srvx intentionally types request context as unknown.
   return log as RequestLogger;
 }

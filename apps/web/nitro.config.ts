@@ -8,7 +8,6 @@ export default defineConfig({
   traceDeps: ["react", "react-dom"],
 
   experimental: {
-    // Required by the Start adapter in src/lib/logger.server.ts.
     asyncContext: true,
   },
   modules: [

@@ -14,7 +14,6 @@ import appCss from "#/styles.css?url";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   server: {
-    // Start handles errors before Nitro, so evlog needs a route middleware too.
     middleware: [createMiddleware().server(evlogErrorHandler)],
   },
   head: () => ({
