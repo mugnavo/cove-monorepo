@@ -13,7 +13,6 @@ pnpm create mugnavo -t monorepo
 - [Drizzle ORM](https://orm.drizzle.team/) + PostgreSQL
 - [Better Auth](https://better-auth.com/)
 - [Vite Plus](https://viteplus.dev/) + [Nitro](https://nitro.build/)
-- [evlog](https://www.evlog.dev/)
 
 ```sh
 ├── apps
