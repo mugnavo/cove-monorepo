@@ -66,8 +66,8 @@ export function IntroPage() {
         </div>
 
         <h1 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-          A <span className="text-yellow-500 dark:text-yellow-200">minimal</span> monorepo starter
-          stack for TanStack Start.
+          A <span className="text-yellow-500 dark:text-yellow-200">minimal</span> starter stack for
+          TanStack Start.
         </h1>
 
         <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
