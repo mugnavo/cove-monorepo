@@ -1,5 +1,5 @@
 {
-  "name": "tanstarter",
+  "name": "cove-monorepo",
   "private": true,
   "type": "module",
   "scripts": {
@@ -40,7 +40,7 @@
     "node": ">=24"
   },
   "packageManager": "pnpm@12.4.2",
-  "generator": "create-mugnavo",
+  "generator": "create-cove",
   "intent": {
     "skills": [
       "@tanstack/*"

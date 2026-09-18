@@ -27,12 +27,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         // scaffold:title
-        title: "TanStarter",
+        title: "Cove Stack",
       },
       {
         name: "description",
         // scaffold:description
-        content: "A minimal monorepo starter template for 🏝️ TanStack Start",
+        content: "A minimal monorepo starter stack for 🏝️ TanStack Start",
       },
     ],
     links: [
