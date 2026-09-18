@@ -1,11 +1,11 @@
-# [TanStarter Monorepo](https://github.com/mugnavo/tanstarter-monorepo)
+# [Cove Stack Monorepo](https://github.com/mugnavo/cove-monorepo)
 
 <!-- scaffold:description -->
 
-A minimal monorepo starter for 🏝️ TanStack Start, based on [mugnavo/tanstarter](https://github.com/mugnavo/tanstarter).
+A minimal monorepo starter for 🏝️ TanStack Start, based on [Cove Stack](https://github.com/mugnavo/cove).
 
 ```
-pnpm create mugnavo -t monorepo
+pnpm create cove -t monorepo
 ```
 
 - [React](https://react.dev) + TanStack [Start](https://tanstack.com/start/latest) + [Router](https://tanstack.com/router/latest) + [Query](https://tanstack.com/query/latest)
@@ -39,10 +39,10 @@ pnpm create mugnavo -t monorepo
 
 #### Setup
 
-1. [Use this template](https://github.com/new?template_name=tanstarter-monorepo&template_owner=mugnavo) or create a project using our CLI:
+1. [Use this template](https://github.com/new?template_name=cove-monorepo&template_owner=mugnavo) or create a project using our CLI:
 
    ```
-   pnpm create mugnavo -t monorepo
+   pnpm create cove -t monorepo
    ```
 
 2. Create a `.env.local` file in `apps/web/` with your values, based on [`.env.schema`](./apps/web/.env.schema), then validate them:
@@ -147,5 +147,5 @@ Code in this template is public domain via [Unlicense](./LICENSE). Feel free to 
 
 ## Related templates
 
-- [mugnavo/tanstarter](https://github.com/mugnavo/tanstarter) - The original minimal version that this template is based on.
-- [tsu-moe/tsu-stack](https://github.com/tsu-moe/tsu-stack) - An opinionated and batteries-included monorepo template from Luzefiru, built on tanstarter-monorepo, with Paraglide.js (i18n), Hono, oRPC, and more.
+- [mugnavo/cove](https://github.com/mugnavo/cove) - The original minimal version that this template is based on.
+- [tsu-moe/tsu-stack](https://github.com/tsu-moe/tsu-stack) - An opinionated and batteries-included monorepo template from Luzefiru, built on cove-monorepo, with Paraglide.js (i18n), Hono, oRPC, and more.
