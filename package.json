@@ -39,7 +39,7 @@
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@12.4.2",
+  "packageManager": "pnpm@12.5.1",
   "generator": "create-cove",
   "intent": {
     "skills": [
