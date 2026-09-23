@@ -13,6 +13,7 @@ env.d.ts
 
 # Testing
 coverage
+.vitest/
 
 # Build Outputs
 out/
