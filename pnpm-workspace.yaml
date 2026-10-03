@@ -21,13 +21,13 @@ catalog:
   "@tailwindcss/vite": 4.3.3
   "@tanstack/devtools-a11y": 0.2.2
   "@tanstack/devtools-vite": 0.8.5
-  "@tanstack/eslint-plugin-query": 5.104.0
+  "@tanstack/eslint-plugin-query": 5.104.1
   "@tanstack/eslint-plugin-router": 1.162.0
   "@tanstack/react-devtools": 0.10.13
   "@tanstack/react-form-devtools": 0.2.34
   "@tanstack/react-form": 1.33.5
-  "@tanstack/react-query": 5.104.0
-  "@tanstack/react-query-devtools": 5.104.0
+  "@tanstack/react-query": 5.104.1
+  "@tanstack/react-query-devtools": 5.104.1
   "@tanstack/react-router": 1.170.41
   "@tanstack/react-router-devtools": 1.167.2
   "@tanstack/react-router-ssr-query": 1.167.3
@@ -44,8 +44,8 @@ catalog:
   date-fns: 4.4.0
   drizzle-kit: 1.0.0-rc.4
   drizzle-orm: 1.0.0-rc.4
-  evlog: 2.29.0
-  lucide-react: 1.49.0
+  evlog: 2.30.0
+  lucide-react: 1.51.0
   nanoid: 6.0.1
   nitro: 3.0.260903-beta
   postgres: 3.4.9
