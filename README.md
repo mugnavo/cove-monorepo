@@ -102,7 +102,7 @@ Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task.
 ## Issue watchlist
 
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
-- [Nitro v3 beta](https://nitro.build/blog/v3-beta) - The template is configured with Nitro v3 beta by default.
+- [Nitro v3 RC](https://nitro.build/blog/v3-rc) - The template is configured with Nitro v3 RC by default.
 - [Drizzle ORM v1 RC](https://orm.drizzle.team/docs/relations-v1-v2) - Drizzle ORM v1 is in RC with relations v2.
 
 ## Goodies
