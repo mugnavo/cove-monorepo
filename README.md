@@ -33,7 +33,7 @@ pnpm create cove -t monorepo
 
 #### Prerequisites
 
-- [Node.js](https://nodejs.org/en/download) >= 24
+- [Node.js](https://nodejs.org/en/download) >= 26
 - [pnpm](https://pnpm.io/installation) >= 12
 - [Vite Plus](https://viteplus.dev/guide/#install-vp) (`vp`)
 

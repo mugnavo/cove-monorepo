@@ -37,9 +37,9 @@
     "vite-plus": "catalog:"
   },
   "engines": {
-    "node": ">=24"
+    "node": ">=26"
   },
-  "packageManager": "pnpm@12.18.0",
+  "packageManager": "pnpm@12.21.0",
   "generator": "create-cove",
   "intent": {
     "skills": [
