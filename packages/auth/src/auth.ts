@@ -2,6 +2,8 @@ import "@tanstack/react-start/server-only";
 import { drizzleAdapter } from "@better-auth/drizzle-adapter/relations-v2";
 import { db } from "@repo/db";
 import * as schema from "@repo/db/schema";
+import { useLogger } from "@repo/logger/nitro";
+import { APIError } from "better-auth/api";
 import { betterAuth } from "better-auth/minimal";
 import { tanstackStartCookies } from "better-auth/tanstack-start";
 import { ENV } from "varlock/env";
@@ -9,6 +11,14 @@ import { ENV } from "varlock/env";
 export const auth = betterAuth({
   baseURL: ENV.VITE_BASE_URL,
   secret: ENV.BETTER_AUTH_SECRET,
+  onAPIError: {
+    // Better Auth turns thrown errors into responses, so record unexpected ones on the wide event.
+    // Providing this hook replaces Better Auth's own error logging.
+    onError: (error) => {
+      if (error instanceof APIError && error.status !== "INTERNAL_SERVER_ERROR") return;
+      useLogger().error(error instanceof Error ? error : String(error));
+    },
+  },
   telemetry: {
     enabled: false,
   },
