@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@better-auth/drizzle-adapter": "catalog:",
+    "@repo/logger": "workspace:*",
     "better-auth": "catalog:",
     "varlock": "catalog:"
   },
@@ -19,6 +20,8 @@
   "peerDependencies": {
     "@repo/db": "workspace:*",
     "@tanstack/react-query": "catalog:",
-    "@tanstack/react-start": "catalog:"
+    "@tanstack/react-start": "catalog:",
+    "evlog": "catalog:",
+    "nitro": "catalog:"
   }
 }

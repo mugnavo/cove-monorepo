@@ -6,13 +6,20 @@
   "exports": {
     ".": "./src/index.ts",
     "./config": "./src/config.ts",
-    "./server": "./src/server.ts"
+    "./server": "./src/server.ts",
+    "./nitro": "./src/nitro.ts"
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "evlog": "catalog:"
+    "evlog": "catalog:",
+    "nitro": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "nitro": {
+      "optional": true
+    }
   }
 }

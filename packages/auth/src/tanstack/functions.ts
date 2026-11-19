@@ -1,3 +1,4 @@
+import { useLogger } from "@repo/logger/nitro";
 import { createServerFn, createServerOnlyFn } from "@tanstack/react-start";
 import { appendResponseHeader, getRequest } from "@tanstack/react-start/server";
 
@@ -38,5 +39,10 @@ export const _getUser = createServerOnlyFn(async (query?: GetUserServerQuery) =>
     appendResponseHeader("Set-Cookie", cookies);
   }
 
-  return session.response?.user || null;
+  const user = session.response?.user || null;
+  if (user) {
+    useLogger().set({ user: { id: user.id } });
+  }
+
+  return user;
 });
