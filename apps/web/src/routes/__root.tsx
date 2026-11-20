@@ -2,7 +2,6 @@ import { Toaster } from "@repo/ui/components/toast";
 import { ThemeProvider } from "@repo/ui/lib/theme-provider";
 import { a11yDevtoolsPlugin } from "@tanstack/devtools-a11y/react";
 import { TanStackDevtools } from "@tanstack/react-devtools";
-import { formDevtoolsPlugin } from "@tanstack/react-form-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
 import { createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
@@ -65,7 +64,6 @@ function RootDocument({ children }: { readonly children: React.ReactNode }) {
               name: "TanStack Router",
               render: <TanStackRouterDevtoolsPanel />,
             },
-            formDevtoolsPlugin(),
             a11yDevtoolsPlugin(),
           ]}
         />
